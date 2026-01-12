@@ -26,15 +26,15 @@ All repositories follow the pattern:
 | `paper`     | Paper source (LaTeX, figures, scripts) |
 | `benchmark` | Benchmark implementations & datasets |
 | `artifact`  | Artifact Evaluation packages |
-| `talk`      | Slides, figures, demo material |
-| `proposal`  | Funding proposals |
-| `grant`     | Grants (travel, etc) |
+| `talk`      | Slides, posters, demo material |
+| `proposal`  | Funding and project proposals |
+| `grant`     | Grants (e.g., travel grants) |
 | `review`    | Paper reviews (private) |
 | `teaching`  | Theses, seminars, etc |
-| `protocol`  | Meeting notes & decisions |
+| `protocol`  | Meeting notes |
 | `cv`        | Academic CVs |
-| `travel`    | Travels (concerenfes, etc) |
-| `misc`      | Non-classifiable material |
+| `travel`    | Conference and research travel planning |
+| `misc`      | Miscellaneous or non-classifiable material |
 
 ---
 
