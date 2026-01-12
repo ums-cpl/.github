@@ -8,61 +8,24 @@ There is intentionally **no hierarchy via folders**. Structure is expressed **ex
 
 ---
 
-## 1. Repository Naming Scheme
+## 1. Repository Naming Conventions & Required Topics
 
-All repositories follow the pattern:
 
-```
-<category>-...
-```
-
-### Categories
-
-| Category    | Purpose |
-|------------|---------|
-| `paper`     | Paper source (LaTeX, figures, scripts) |
-| `benchmark` | Benchmark implementations & datasets |
-| `artifact`  | Artifact Evaluation packages |
-| `talk`      | Slides, posters, demo material |
-| `proposal`  | Funding and project proposals |
-| `grant`     | Grants (e.g., travel grants) |
-| `teaching`  | Theses, seminars, etc |
-| `protocol`  | Meeting notes |
-| `cv`        | Academic CVs |
-| `travel`    | Conference and research travel planning |
-| `misc`      | Miscellaneous or non-classifiable material |
-
----
-
-## 2. Examples
-
-### Papers
-```
-paper-cgo26-mdh-schedules
-paper-pldi25-atf-python-interface
-```
-
-### Artifacts
-```
-artifact-cgo26-mdh-schedules
-```
-
-### Proposals / Grants
-```
-proposal-dfg25-ppp-dl
-grant-en26-goe
-```
-
-### Teaching
-```
-teaching-pjs-ss26-codegen-dl
-teaching-ma-ws27-at-dynamic
-```
-
-### Protocols
-```
-protocol-2026-01-10-tensor-cores
-```
+| Category    | Repository Naming Convention              | Required Topics                                                   | Example                              |
+|-------------|-------------------------------------------|-------------------------------------------------------------------|--------------------------------------|
+| `paper`     | `paper-<venue><year>-<slug>`              | `paper`, `<venue>`, `<year>`, `<mdh/atf/hca>`                     | `paper-cgo26-mdh-schedules`          |
+| `benchmark` | `benchmark-<venue><year>-<slug>`          | `benchmark`, `<venue>`, `<year>`, `<mdh/atf/hca>`                 | `benchmark-cgo26-mdh-schedules`      |
+| `artifact`  | `artifact-<venue><year>-<slug>`           | `artifact`, `<venue>`, `<year>`, `<mdh/atf/hca>`                  | `artifact-cgo26-mdh-schedules`       |
+| `talk`      | `talk-<event><year>-<slug>`               | `talk`, `<event>`, `<year>`, `<mdh/atf/hca>`                      | `talk-cgo26-mdh-overview`            |
+| `proposal`  | `proposal-<funding-org><year>-<slug>`     | `proposal`, `<funding-org>`, `<year>`, `<mdh/atf/hca>`            | `proposal-dfg25-ai-codegen`          |
+| `grant`     | `grant-<name><year>-<slug>`               | `grant`, `<name>`, `<year>`, `<mdh/atf/hca>`                      | `grant-en26-goe`                     |
+| `review`    | `review-<venue><year>-<paper-id>`         | `review`, `<venue>`, `<year>`, `<mdh/atf/hca>`                    | `review-pldi26-1234`                 |
+| `teaching`  | `teaching-<course>-<semester>-<slug>`     | `teaching`, `<course>`, `<semester>`, `<mdh/atf/hca>`             | `teaching-pjs-ss26-codegen-dl`       |
+| `teaching`  | `teaching-<ba/ma/diss>-<year>-<name>`     | `teaching`, `<ba/ma/diss>`, `<year>`, `<name>`, `<mdh/atf/hca>`   | `teaching-ba-2026-john-doe`          |
+| `protocol`  | `protocol-<date>-<slug>`                  | `protocol`, `<date>`, `<mdh/atf/hca>`                             | `protocol-2026-12-01-tensor-cores`   |
+| `cv`        | `cv-<name>`                               | `cv`                                                              | `cv-john-doe`                        |
+| `travel`    | `travel-<year>-<destination>-<slug>`      | `travel`, `<year>`, `<destination>`                               | `travel-2026-sydney-cgo`             |
+| `misc`      | `misc-<slug>`                             | optional                                                          | `misc-headshots`                     |
 
 ---
 
