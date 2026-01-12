@@ -1,13 +1,10 @@
 # UMS-CPL: University of Muenster – Compilers & Programming Languages
 
-This GitHub organization hosts research, teaching, and administrative artifacts of the  
-**CPL (Compilers & Programming Languages)** group.
+This GitHub organization hosts research, teaching, and administrative artifacts in the area of **Compilers & Programming Languages (CPL)** developed at the University of Münster.
 
-The organization follows a **flat repository structure** with **strict naming conventions**
-and a **controlled GitHub topic vocabulary**.
+The organization follows a **flat repository structure** with **strict naming conventions** and a **controlled GitHub topic vocabulary**.
 
-There is intentionally **no hierarchy via folders**.  
-Structure is expressed **exclusively via repository names and topics**.
+There is intentionally **no hierarchy via folders**. Structure is expressed **exclusively via repository names and topics**.
 
 ---
 
