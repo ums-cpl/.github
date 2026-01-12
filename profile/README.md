@@ -18,7 +18,7 @@ There is intentionally **no hierarchy via folders**. Structure is expressed **ex
 | `artifact`  | `artifact-<venue><year>-<slug>`               | `artifact`, `<venue>`, `<year>`, `<mdh/atf/hca>`                  | `artifact-cgo26-mdh-schedules`       |
 | `talk`      | `talk-<event><year>-<slug>`                   | `talk`, `<event>`, `<year>`, `<mdh/atf/hca>`                      | `talk-cgo26-mdh-overview`            |
 | `proposal`  | `proposal-<funding-org><year>-<slug>`         | `proposal`, `<funding-org>`, `<year>`, `<mdh/atf/hca>`            | `proposal-dfg25-ai-codegen`          |
-| `grant`     | `grant-<name><year>-<slug>`                   | `grant`, `<name>`, `<year>`, `<mdh/atf/hca>`                      | `grant-en26-goe`                     |
+| `grant`     | `grant-<name><year>-<slug>`                   | `grant`, `<name>`, `<year>`, `<mdh/atf/hca>`                      | `grant-sc26-ecp`                     |
 | `teaching`  | `teaching-<course>-<semester>-<slug>`         | `teaching`, `<course>`, `<semester>`, `<mdh/atf/hca>`             | `teaching-pjs-ss26-codegen-dl`       |
 | `teaching`  | `teaching-<ba/ma/diss>-<year>-<student-name>` | `teaching`, `<ba/ma/diss>`, `<year>`, `<name>`, `<mdh/atf/hca>`   | `teaching-ba-2026-john-doe`          |
 | `protocol`  | `protocol-<date>-<slug>`                      | `protocol`, `<date>`, `<mdh/atf/hca>`                             | `protocol-2026-12-01-tensor-cores`   |
