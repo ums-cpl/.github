@@ -58,13 +58,13 @@ grant-en26-goe
 
 ### Teaching
 ```
-teaching-pjs26-codegen-dl
-teaching-ma26-rs-mdh
+teaching-pjs-ss26-codegen-dl
+teaching-ma-ws27-at-dynamic
 ```
 
 ### Protocols
 ```
-protocol-2026-01-10-mdh-meeting
+protocol-2026-01-10-tensor-cores
 ```
 
 ---
