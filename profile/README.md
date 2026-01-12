@@ -29,7 +29,6 @@ All repositories follow the pattern:
 | `talk`      | Slides, posters, demo material |
 | `proposal`  | Funding and project proposals |
 | `grant`     | Grants (e.g., travel grants) |
-| `review`    | Paper reviews (private) |
 | `teaching`  | Theses, seminars, etc |
 | `protocol`  | Meeting notes |
 | `cv`        | Academic CVs |
@@ -77,8 +76,7 @@ Topics are **mandatory** and serve as the **only hierarchical mechanism**.
 ### 3.1 Primary Type (exactly one)
 
 ```
-paper | benchmark | artifact | talk | proposal | grant | review |
-teaching | protocol | cv | travel | misc
+paper | benchmark | artifact | talk | proposal | grant | teaching | protocol | cv | travel | misc
 ```
 
 ---
@@ -136,8 +134,7 @@ Multiple themes are allowed.
 
 ## 5. Privacy Rules
 
-- `review-*` repositories **must be private**
-- Other repositories default to private
+Repositories default to private
 
 ---
 
