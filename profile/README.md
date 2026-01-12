@@ -49,7 +49,7 @@ paper | benchmark | artifact | talk | proposal | grant | teaching | protocol | c
 
 ### 3.2 Context Identifiers
 
-** Venue / Event** (lowercase, short):
+**Venue / Event** (lowercase, short):
 ```
 cgo, pldi, cc, toplas, taco, developer-meeting
 ```
