@@ -131,7 +131,7 @@ Examples:
 
 ### `<destination>`
 
-Use lowercase, hyphen-separated full city names. Avoid abbreviations unless they are globally unambiguous.
+Lowercase, hyphen-separated full city names. Avoid abbreviations unless they are globally unambiguous.
 
 Examples:
 ```
