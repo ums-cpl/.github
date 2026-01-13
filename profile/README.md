@@ -6,89 +6,175 @@ The organization follows a **flat repository structure** with **strict naming co
 
 There is intentionally **no hierarchy via folders**. Structure is expressed **exclusively via repository names and topics**.
 
----
 
 ## 1. Repository Naming Conventions & Required Topics
 
-
-| Category    | Repository Naming Convention                  | Required Topics                                                   | Example                              |
-|-------------|-----------------------------------------------|-------------------------------------------------------------------|--------------------------------------|
-| `paper`     | `paper-<venue><year>-<slug>`                  | `paper`, `<venue>`, `<year>`, `<mdh/atf/hca>`                     | `paper-cgo26-mdh-schedules`          |
-| `benchmark` | `benchmark-<venue><year>-<slug>`              | `benchmark`, `<venue>`, `<year>`, `<mdh/atf/hca>`                 | `benchmark-cgo26-mdh-schedules`      |
-| `artifact`  | `artifact-<venue><year>-<slug>`               | `artifact`, `<venue>`, `<year>`, `<mdh/atf/hca>`                  | `artifact-cgo26-mdh-schedules`       |
-| `talk`      | `talk-<event><year>-<slug>`                   | `talk`, `<event>`, `<year>`, `<mdh/atf/hca>`                      | `talk-cgo26-mdh-overview`            |
-| `proposal`  | `proposal-<funding-org><year>-<slug>`         | `proposal`, `<funding-org>`, `<year>`, `<mdh/atf/hca>`            | `proposal-dfg25-ai-codegen`          |
-| `grant`     | `grant-<name><year>-<slug>`                   | `grant`, `<name>`, `<year>`, `<mdh/atf/hca>`                      | `grant-sc26-ecp`                     |
-| `teaching`  | `teaching-<course>-<semester>-<slug>`         | `teaching`, `<course>`, `<semester>`, `<mdh/atf/hca>`             | `teaching-pjs-ss26-codegen-dl`       |
-| `teaching`  | `teaching-<ba/ma/diss>-<year>-<student-name>` | `teaching`, `<ba/ma/diss>`, `<year>`, `<name>`, `<mdh/atf/hca>`   | `teaching-ba-2026-john-doe`          |
-| `protocol`  | `protocol-<date>-<slug>`                      | `protocol`, `<date>`, `<mdh/atf/hca>`                             | `protocol-2026-12-01-tensor-cores`   |
-| `cv`        | `cv-<name>`                                   | `cv`                                                              | `cv-john-doe`                        |
-| `travel`    | `travel-<year>-<destination>-<slug>`          | `travel`, `<year>`, `<destination>`                               | `travel-2026-sydney-cgo`             |
-| `misc`      | `misc-<slug>`                                 | optional                                                          | `misc-headshots`                     |
-
+| Category    | Repository Naming Convention                  | Example                              | Required Topics                                                     |
+|-------------|-----------------------------------------------|--------------------------------------|---------------------------------------------------------------------|
+| `paper`     | `paper-<venue><year>-<slug>`                  | `paper-cgo26-mdh-schedules`          | `paper`, `<venue>`, `<year>`, `<research-area>`                     |
+| `benchmark` | `benchmark-<venue><year>-<slug>`              | `benchmark-cgo26-mdh-schedules`      | `benchmark`, `<venue>`, `<year>`, `<research-area>`                 |
+| `artifact`  | `artifact-<venue><year>-<slug>`               | `artifact-cgo26-mdh-schedules`       | `artifact`, `<venue>`, `<year>`, `<research-area>`                  |
+| `talk`      | `talk-<event><year>-<slug>`                   | `talk-cgo26-mdh-overview`            | `talk`, `<event>`, `<year>`, `<research-area>`                      |
+| `proposal`  | `proposal-<funding-org><year>-<slug>`         | `proposal-dfg25-ai-codegen`          | `proposal`, `<funding-org>`, `<year>`, `<research-area>`            |
+| `grant`     | `grant-<year>-<slug>`                         | `grant-26-sc-ecp`                    | `grant`, `<year>`, `<research-area>`                                |
+| `teaching`  | `teaching-<course>-<semester>-<slug>`         | `teaching-pjs-ss26-ai-codegen`       | `teaching`, `<course>`, `<semester>`, `<research-area>`             |
+| `teaching`  | `teaching-<thesis>-<year>-<name>`             | `teaching-ba-26-jane-doe`            | `teaching`, `<thesis>`, `<year>`, `<name>`, `<research-area>`       |
+| `protocol`  | `protocol-<date>-<slug>`                      | `protocol-2026-12-01-tensor-cores`   | `protocol`, `<date>`, `<research-area>`                             |
+| `cv`        | `cv-<name>`                                   | `cv-jane-doe`                        | `cv`                                                                |
+| `travel`    | `travel-<year>-<destination>-<slug>`          | `travel-26-sydney-cgo`               | `travel`, `<year>`, `<destination>`                                 |
+| `misc`      | `misc-<slug>`                                 | `misc-headshots`                     | optional                                                            |
 
 
----
+## 2. **Global Naming Rules**
 
-## 3. **Global Naming Rules**
+All identifiers used within this organization — including repository names, topics, slugs, and other naming elements — follow a single, consistent convention:
 
-- Repository names and topics MUST use **lowercase only**
-- Use **hyphen-separated** identifiers
-- Do not use spaces or underscores
+- Use **lowercase characters only**
+- Keep identifiers **short, descriptive, and stable**
+- Use **hyphen-separated** words
+- Do **not** use spaces or underscores
 
+These rules apply uniformly across the entire organization and are intended to ensure consistency, longevity, and machine-friendliness.  
+This scheme is intentionally designed to be machine-readable and suitable for automation, indexing, and long-term archival.
 
 Topics are **mandatory** and serve as the **only hierarchical mechanism**.
 
-### 3.1 Primary Type 
+---
+
+### Categories
 
 ```
 paper | benchmark | artifact | talk | proposal | grant | teaching | protocol | cv | travel | misc
 ```
 
----
+### `<venue>`
 
-### 3.2 Context Identifiers
+Conference and journal acronyms.
 
-**Venue / Event** (lowercase, short):
+Examples:
 ```
-cgo, pldi, cc, toplas, taco, developer-meeting
-```
-
-**Funding Organizations**:
-```
-dfg, bmbf
+pldi, cgo, toplas, taco
 ```
 
-**Teaching Courses & Semester**:
+### `<event>`
+
+Event code (including conference and journal acronyms)
+
+Examples:
 ```
-pjs-ss25, sem-ws26, mgpp-ss23, ps-ws24
+pldi, cgo, toplas, taco, mlir-developer-meeting
 ```
 
----
+### `<funding-org>`:
 
-### 3.3 Year and Date
+Funding organization acronym.
 
-- `<year>` uses two digits (YY):  `24`, `25`, `26`
-- `<date>` uses ISO 8601 format (YYYY-MM-DD): `2024-01-15`, `2025-06-30`, `2026-12-01`
+Examples:
+```
+dfg, bmbf, nsf
+```
 
----
+### `<course>`
 
-## 4. Topic Rules (Strict)
+Course acronym.
+
+Examples:
+```
+pjs, sem, mgpp, ps
+```
+
+### `<semester>`
+
+Semester acronym `ssYY` or `wsYY`, where `YY` denotes the year.
+
+Examples:
+```
+ss25, ws26
+```
+
+### `<thesis>`
+
+Thesis type.
+
+Examples:
+```
+ba, ma, diss
+```
+
+### `<name>`
+
+First and last name.
+
+Examples:
+```
+jane-doe, john-doe
+```
+
+
+### `<year>` 
+
+Two digits (YY).
+
+Examples: 
+```
+24, 25, 26
+```
+
+### `<date>` 
+
+ISO 8601 format (YYYY-MM-DD).
+
+Examples: 
+```
+2024-01-15, 2025-06-30, 2026-12-01
+```
+
+### `<destination>`
+
+Use lowercase, hyphen-separated full city names. Avoid abbreviations unless they are globally unambiguous.
+
+Examples:
+```
+berlin, washington-dc, new-york, san-francisco, hong-kong
+```
+
+### `<slug>`
+
+Short, human-readable identifier describing the **specific content or focus** of the repository.
+
+Examples:
+```
+mdh-schedules, ai-codegen
+```
+
+### `<research-area>`
+
+One or more research areas describing the technical focus of the repository.
+
+Allowed values:
+`code-generation | code-optimization | code-execution`
+
+Rules:
+- One or more values MAY be used
+- Prefer the minimal sufficient set
+- If none of the above apply, contact the organization administrators before creating the repository
+
+
+## 3. Topic Rules (Strict)
 
 - Follow the Global Naming Rules
 - No free-form invention of topics
 - Prefer **short, stable identifiers**
 - Topics must remain meaningful over **5+ years**
 
----
 
-## 5. Privacy Rules
+## 4. Privacy Rules
 
-Repositories default to private
+Repositories are private by default.  
+Public visibility requires an explicit justification (e.g., published artifact, teaching material, or public benchmark).
 
----
 
-## 6. The `.github` Repository
+## 5. The `.github` Repository
 
 The `.github` repository contains organization-wide defaults:
 
@@ -97,9 +183,8 @@ The `.github` repository contains organization-wide defaults:
 - Pull request templates
 - Contribution guidelines (if applicable)
 
----
 
-## 7. Philosophy
+## 6. Philosophy
 
 This structure is designed to:
 
