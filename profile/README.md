@@ -19,7 +19,7 @@ There is intentionally **no hierarchy via folders**. Structure is expressed **ex
 | `grant`     | `grant-<year>-<slug>`                         | `grant-26-sc-ecp`                    | `grant`, `<year>`, `<research-area>`                                |
 | `topic`     | `topic-<slug>`                                | `topic-tensor-core-eval`             | `topic`, `<research-area>`                                          |
 | `teaching`  | `teaching-<course>-<semester>-<slug>`         | `teaching-pjs-ss26-ai-codegen`       | `teaching`, `<course>`, `<semester>`, `<research-area>`             |
-| `teaching`  | `teaching-<thesis>-<year>-<name>`             | `teaching-ba-26-jane-doe`            | `teaching`, `<thesis>`, `<year>`, `<name>`, `<research-area>`       |
+| `teaching`  | `teaching-<thesis>-<year>-<name>`             | `teaching-ba-26-jane-doe`            | `teaching`, `<thesis>`, `<year>`, `<research-area>`                 |
 | `protocol`  | `protocol-<date>-<slug>`                      | `protocol-2026-12-01-tensor-cores`   | `protocol`, `<date>`, `<research-area>`                             |
 | `cv`        | `cv-<name>`                                   | `cv-jane-doe`                        | `cv`                                                                |
 | `travel`    | `travel-<year>-<destination>-<slug>`          | `travel-26-sydney-cgo`               | `travel`, `<year>`, `<destination>`                                 |
