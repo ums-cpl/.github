@@ -17,7 +17,7 @@ There is intentionally **no hierarchy via folders**. Structure is expressed **ex
 | `talk`      | `talk-<event><year>-<slug>`                   | `talk-cgo26-mdh-overview`            | `talk`, `<event>`, `<year>`, `<research-area>`                      |
 | `proposal`  | `proposal-<funding-org><year>-<slug>`         | `proposal-dfg25-ai-codegen`          | `proposal`, `<funding-org>`, `<year>`, `<research-area>`            |
 | `grant`     | `grant-<year>-<slug>`                         | `grant-26-sc-ecp`                    | `grant`, `<year>`, `<research-area>`                                |
-| `topic`     | `topic-<slug>`                                | `topic-tensor-core-eval`             | `<research-area>`                                                   |
+| `topic`     | `topic-<slug>`                                | `topic-tensor-core-eval`             | `topic`, `<research-area>`                                          |
 | `teaching`  | `teaching-<course>-<semester>-<slug>`         | `teaching-pjs-ss26-ai-codegen`       | `teaching`, `<course>`, `<semester>`, `<research-area>`             |
 | `teaching`  | `teaching-<thesis>-<year>-<name>`             | `teaching-ba-26-jane-doe`            | `teaching`, `<thesis>`, `<year>`, `<name>`, `<research-area>`       |
 | `protocol`  | `protocol-<date>-<slug>`                      | `protocol-2026-12-01-tensor-cores`   | `protocol`, `<date>`, `<research-area>`                             |
