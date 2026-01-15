@@ -196,3 +196,20 @@ This structure is designed to:
 - Avoid implicit knowledge and ad-hoc naming
 
 **If a repository does not fit the scheme, the scheme is wrong – not the repository.**
+
+
+## 7. Repository Hygiene (General)
+
+All repositories are expected to be **clean, intentional, and self-contained**.  
+They represent **long-lived research records** and must remain understandable without implicit context.
+
+**Examples of expected practice include:**
+
+- **Paper repositories (`paper-*`)**
+  - clean, incremental commits
+  - explicit **Git tags** for submitted and accepted versions (including reviews)
+  - the **current compiled PDF** is always committed to the repository
+  - sources and rendered output are kept **consistent**
+
+These examples are **illustrative, not exhaustive**.  
+The general rule applies to all categories: **a repository is a record, not a scratch space**.
