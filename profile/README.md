@@ -15,6 +15,7 @@ There is intentionally **no hierarchy via folders**. Structure is expressed **ex
 | `benchmark` | `benchmark-<venue><year>-<slug>`              | `benchmark-cgo26-mdh-schedules`      | `benchmark`, `<venue>`, `<year>`, `<research-area>`                 |
 | `artifact`  | `artifact-<venue><year>-<slug>`               | `artifact-cgo26-mdh-schedules`       | `artifact`, `<venue>`, `<year>`, `<research-area>`                  |
 | `talk`      | `talk-<event><year>-<slug>`                   | `talk-cgo26-mdh-overview`            | `talk`, `<event>`, `<year>`, `<research-area>`                      |
+| `poster`    | `poster-<event><year>-<slug>`                 | `poster-cgo26-src-jane-doe`          | `poster`, `<event>`, `<year>`, `<research-area>`                    |
 | `proposal`  | `proposal-<funding-org><year>-<slug>`         | `proposal-dfg25-ai-codegen`          | `proposal`, `<funding-org>`, `<year>`, `<research-area>`            |
 | `grant`     | `grant-<year>-<slug>`                         | `grant-26-sc-ecp`                    | `grant`, `<year>`, `<research-area>`                                |
 | `topic`     | `topic-<slug>`                                | `topic-tensor-core-eval`             | `topic`, `<research-area>`                                          |
@@ -45,7 +46,7 @@ Topics are **mandatory** and serve as the **only hierarchical mechanism**.
 ### Categories
 
 ```
-paper | benchmark | artifact | talk | proposal | grant | topic | teaching | protocol | cv | travel | misc
+paper | benchmark | artifact | talk | poster | proposal | grant | topic | teaching | protocol | cv | travel | misc
 ```
 
 ### `<venue>`
