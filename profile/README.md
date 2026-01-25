@@ -23,7 +23,7 @@ There is intentionally **no hierarchy via folders**. Structure is expressed **ex
 | `teaching`  | `teaching-<thesis>-<year>-<name>`             | `teaching-ba-26-jane-doe`            | `teaching`, `<thesis>`, `<year>`, `<research-area>`                 |
 | `protocol`  | `protocol-<date>-<slug>`                      | `protocol-2026-12-01-tensor-cores`   | `protocol`, `<date>`, `<research-area>`                             |
 | `cv`        | `cv-<name>`                                   | `cv-jane-doe`                        | `cv`                                                                |
-| `nio`       | `bio-<name>`                                  | `bio-jane-doe`                       | `bio`                                                               |
+| `bio`       | `bio-<name>`                                  | `bio-jane-doe`                       | `bio`                                                               |
 | `travel`    | `travel-<year>-<destination>-<slug>`          | `travel-26-sydney-cgo`               | `travel`, `<year>`, `<destination>`                                 |
 | `misc`      | `misc-<slug>`                                 | `misc-headshots`                     | optional                                                            |
 
