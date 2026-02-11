@@ -214,3 +214,14 @@ They represent **long-lived research records** and must remain understandable wi
 
 These examples are **illustrative, not exhaustive**.  
 The general rule applies to all categories: **a repository is a record, not a scratch space**.
+
+
+## 8. Meeting Log Template
+
+Structured supervision and project meetings follow a standardized Markdown template to ensure consistency, traceability, and long-term archival quality.
+
+The official meeting log template is maintained in:
+
+https://github.com/ums-cpl/misc-meeting-log-template/blob/main/meeting-log-template.md
+
+All supervision-related repositories (e.g., `paper-*`, `teaching-*`) are expected to use this template unless a justified deviation is documented.
