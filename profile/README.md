@@ -225,3 +225,13 @@ The official meeting log template is maintained in:
 https://github.com/ums-cpl/misc-meeting-log-template/blob/main/meeting-log-template.md
 
 All supervision-related repositories (e.g., `paper-*`, `teaching-*`) are expected to use this template unless a justified deviation is documented.
+
+
+## 9. AI Rules (Coding Assistants)
+
+Project rules for AI coding assistants (e.g. Cursor) are maintained in a dedicated repository and can be used across the organization’s projects:
+
+https://github.com/ums-cpl/ai-rules
+
+Clone or reference this repo in your editor (e.g. Cursor: Rules → Add from GitHub) to apply typography, language, and editing conventions consistently.
+
