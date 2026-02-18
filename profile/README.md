@@ -184,7 +184,7 @@ For every **public repository**, the default branch `main` **must be protected**
 `main-protection`
 
 #### Bypass list
-- `Maintain`
+- `Organization admin`
 
 #### Target branches
 `Include by pattern`: `main`
