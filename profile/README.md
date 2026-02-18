@@ -186,10 +186,10 @@ For every **public repository**, the default branch `main` **must be protected**
 #### Bypass list
 - `Maintain`
 
-#### Target Branches
+#### Target branches
 `Include by pattern`: `main`
 
-#### Branch Rules
+#### Branch rules
 
 - `Restrict deletions`
   Only users with bypass permissions may delete the branch.
