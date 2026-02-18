@@ -173,9 +173,41 @@ Rules:
 
 ## 4. Privacy Rules
 
-Repositories are private by default.  
+Repositories are `private` by default.  
 Public visibility requires an explicit justification (e.g., published artifact, teaching material, or public benchmark).
 
+### Protected `main` Branch for Public Repositories
+
+For every **public repository**, the default branch `main` **must be protected** via a ruleset with the following configuration (the ruleset is **closed and exhaustive**):
+
+#### Ruleset Name
+`main-protection`
+
+#### Bypass list
+- `Maintain`
+
+#### Target Branches
+`Include by pattern`: `main`
+
+#### Branch Rules
+
+- `Restrict deletions`
+  Only users with bypass permissions may delete the branch.
+
+- `Require linear history`
+  Merge commits are disallowed; history must remain strictly linear.
+
+- `Require a pull request before merging`
+  Direct pushes to `main` are prohibited. All changes must go through a PR with:
+
+  - `Required approvals`: `1`
+  - `Dismiss stale approvals when new commits are pushed`
+  - `Require review from Code Owners`
+  - `Require approval of the most recent reviewable push`
+  - `Require conversation resolution before merging`
+  - `Allowed merge methods`: `Squash`, `Rebase`
+
+- `Block force pushes`
 
 ## 5. The `.github` Repository
 
